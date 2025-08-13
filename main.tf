@@ -1,5 +1,5 @@
 module "app_2048" {
-  source            = "./modules/apps"
+  source            = "./modules/2048"
   app_name          = "helming2048"
   argocd_namespace  = "argocd"
   app_namespace     = "myapp"
