@@ -1,15 +1,3 @@
-# module "k8s" {
-#   source     = "./modules/k8s"
-#   kubeconfig = var.kubeconfig
-# }
-
-module "argocd" {
-  source        = "./modules/argocd"
-  namespace     = "argocd"
-  chart_version = "4.10.8"
-  node_port     = 30080
-}
-
 module "app_2048" {
   source            = "./modules/apps"
   app_name          = "helming2048"
